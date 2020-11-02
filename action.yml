@@ -1,0 +1,10 @@
+name: 'msxml4'
+description: 'install msxml4 on a windows server'
+branding:
+  icon: 'code'  
+  color: 'red'
+runs:
+  using: "composite"
+  steps: 
+    - run: $GITHUB_ACTION_PATH/msxml4-install.ps1
+      shell: pwsh
