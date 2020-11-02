@@ -6,5 +6,5 @@ branding:
 runs:
   using: "composite"
   steps: 
-    - run: $GITHUB_ACTION_PATH/msxml4-install.ps1
+    - run: ${{ github.action_path }}/msxml4-install.ps1
       shell: pwsh
